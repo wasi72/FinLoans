@@ -1,0 +1,16 @@
+.AboutBackground{
+    background-image: url(../images/bradcam2.png);
+    background-repeat: no-repeat;
+    background-size:100% 26rem ;
+}
+.About-content{
+    margin-top: 0;
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.About-content h2{
+    padding:10vh 0 0 20vw;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+}

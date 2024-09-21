@@ -1,0 +1,128 @@
+.loan-banner {
+    background-image: url('../images/loan.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 60vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 0 20px;
+}
+
+
+.loan-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1; 
+}
+
+.loan-banner-content {
+    display: flex; 
+    align-items: center; 
+    text-align: left;
+    max-width: 70%; 
+    padding: 0 10px; 
+    color: #fff;
+    z-index: 2; 
+    position: relative;
+}
+
+.loan-banner h1 {
+    font-size: 3rem; 
+    font-weight: 600;
+    margin-right: 20px; 
+    line-height: 1.2;
+}
+
+.apply-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00d1b2;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center; 
+    line-height: 1; 
+    white-space: nowrap; 
+    transition: background-color 0.3s ease;
+    z-index: 2;
+}
+
+.apply-btn:hover {
+    background-color: #00bfa5;
+}
+
+@media (min-width: 1600px) {
+    .loan-banner {
+        height: 70vh;
+    }
+
+    .loan-banner-content {
+        max-width: 1000px;
+    }
+
+    .loan-banner h1 {
+        font-size: 3.5rem;
+    }
+
+    .apply-btn {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    .loan-banner {
+        height: 65vh;
+    }
+
+    .loan-banner h1 {
+        font-size: 2.8rem;
+    }
+
+    .apply-btn {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .loan-banner {
+        height: 50vh; 
+    }
+
+    .loan-banner-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .loan-banner h1 {
+        font-size: 2.2rem;
+        margin-bottom: 15px; 
+    }
+
+    .apply-btn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .loan-banner {
+        height: 45vh; 
+    }
+
+    .loan-banner h1 {
+        font-size: 1.8rem; 
+    }
+
+    .apply-btn {
+        padding: 8px 20px; 
+        font-size: 0.9rem;
+    }
+}

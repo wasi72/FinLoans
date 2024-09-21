@@ -1,0 +1,153 @@
+  .blog-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .blog-container {
+    width: 70%;
+    display: flex;
+    padding: 20px;
+    margin-left: 18rem;
+  }
+  
+  .blog-left-content {
+    width: 70%;
+    padding-right: 20px;
+  }
+  
+  .blog-right-content {
+    margin-top: 5rem;
+    width: 25%;
+  }
+  
+  .blog-post img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .blog-post h2 {
+    font-size: 2rem;
+    margin: 20px 0;
+  }
+  
+  .blog-meta {
+    color: #888;
+    margin-bottom: 10px;
+  }
+  
+  .blog-post p {
+    line-height: 1.6;
+  }
+  
+  .blog-quote {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 4px solid #17a2b8;
+    font-style: italic;
+  }
+  
+  .comments-section, .reply-section {
+    margin-top: 40px;
+  }
+  
+  .comment p {
+    margin: 10px 0;
+  }
+  
+  .reply-section form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .reply-section textarea, .reply-section input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .reply-section button {
+    background-color: #17a2b8;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .widget {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .widget h3 {
+    margin-bottom: 15px;
+  }
+  
+  /* Responsiveness */
+  @media (max-width: 1200px) {
+    .blog-container {
+      width: 80%;
+    }
+  
+    .blog-left-content {
+      width: 65%;
+    }
+  
+    .blog-right-content {
+      width: 30%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .blog-container {
+      width: 90%;
+      flex-direction: column;
+    }
+  
+    .blog-left-content, .blog-right-content {
+      width: 100%;
+      padding: 0;
+    }
+  
+    .blog-right-content {
+      margin-top: 30px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .blog-header h1 {
+      font-size: 2rem;
+    }
+  
+    .blog-left-content h2 {
+      font-size: 1.5rem;
+    }
+  
+    .reply-section textarea, .reply-section input {
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .blog-container {
+      width: 100%;
+    }
+  
+    .blog-left-content {
+      padding-right: 0;
+    }
+  
+    .blog-post h2 {
+      font-size: 1.25rem;
+    }
+  
+    .widget {
+      padding: 10px;
+    }
+  }
+  

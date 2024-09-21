@@ -1,0 +1,160 @@
+
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; 
+  height: calc(100vh - 60px);
+  padding: 0 20px; 
+  margin-top: 10rem; 
+}
+
+
+.hero-left, .hero-right {
+  width: 35%; 
+  margin: 0 2.5%; 
+  min-height: 60vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.hero-left {
+  color: #ffffff; 
+}
+
+.hero-left h1 {
+  font-size: 3rem;
+  font-weight: 450;
+  line-height: 3.5rem;
+  margin-bottom: 20px;
+  color: #fff; 
+}
+
+.how-it-works-btn {
+  padding: 12px 4px; 
+  background-color: #00c8d7;
+  width: 10rem;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem; 
+  border-radius: 0.3rem;
+  margin-bottom: 1rem; 
+}
+
+.hero-right {
+  background-color: #ffffff; 
+  padding: 20px; 
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+}
+
+.loan-form h2 {
+  font-size: 1.4rem; 
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.loan-form p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.continue-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #00c8d7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+}
+
+.continue-btn:hover {
+  background-color: #009ca8;
+}
+
+@media (max-width: 1024px) {
+  .hero-section {
+    flex-direction: column;
+    margin-top: 2rem;
+    height: auto; 
+  }
+
+  .hero-left, .hero-right {
+    width: 80%;
+    margin: 0;
+    min-height: auto;
+  }
+
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 0 10px; 
+  }
+
+  .hero-left, .hero-right {
+    width: 90%;
+    margin: 0;
+    min-height: auto; 
+  }
+
+  .hero-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .loan-form h2 {
+    font-size: 1.2rem;
+  }
+
+  .how-it-works-btn, .continue-btn {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .loan-form h2 {
+    font-size: 1rem;
+  }
+
+  .continue-btn {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .how-it-works-btn {
+    margin-bottom: 1rem;
+  }
+}

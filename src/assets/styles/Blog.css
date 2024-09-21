@@ -1,0 +1,83 @@
+.BlogLayout {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center; 
+  gap: 20px;
+  padding: 20px 0;
+  align-items: stretch; 
+}
+
+.blog-left {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-card {
+  background-color: white;
+  margin-bottom: 20px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  flex-grow: 1;
+}
+
+.blog-image img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-date span {
+  background-color: #00aaff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.blog-right {
+  flex: 1;
+  padding: 20px;
+  margin: 60px 0 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%; 
+  cursor: pointer;
+}
+
+.blog-right .widget {
+  margin-bottom: 20px;
+}
+
+.blog-right h3 {
+  margin-bottom: 15px;
+}
+
+.blog-right ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.blog-right ul li {
+  margin-bottom: 10px;
+}
+
+/* Ensure both sides have the same height */
+.BlogLayout > * {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Responsive Design */
+@media (max-width: 1155px) {
+  .BlogLayout {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-left, .blog-right {
+    width: 100%;
+  }
+}

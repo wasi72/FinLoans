@@ -1,0 +1,67 @@
+  .loan-form-container {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .loan-form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .loan-form-container p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #777;
+  }
+  
+  .loan-form input,
+  .loan-form select,
+  .loan-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  .loan-form textarea {
+    resize: none;
+  }
+  
+  .loan-form p {
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+  }
+  
+  .loan-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00d1b2;
+    border: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .loan-form button:hover {
+    background-color: #00bfa5;
+  }
+  
+  @media (max-width: 768px) {
+    .loan-form-container {
+      padding: 10px;
+    }
+  }
+  
